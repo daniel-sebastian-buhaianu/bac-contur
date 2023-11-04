@@ -1,11 +1,12 @@
 #include <iostream>
+#define VMIN 2
 #define VMAX 100
 using namespace std;
 int main()
 {
 	int a[VMAX][VMAX], n, i, j, nr, x;
 	cout << "n = "; cin >> n;
-	cout << "Introdu " << n*n << " numere din intervalul [2, 100]:\n";
+	cout << "Introdu " << n*n << " numere din intervalul [" << VMIN << ", " << VMAX << "]:\n";
 	for (i = 0; i < n; i++)
 		for (j = 0; j < n; j++)
 			cin >> a[i][j];
